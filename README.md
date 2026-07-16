@@ -82,7 +82,7 @@ La ejecución genera:
 
 Las métricas y la imagen de las curvas se versionan como evidencia del experimento. El archivo de pesos `.pt` queda excluido mediante `.gitignore`.
 
-La interpretación esperada es que la pérdida de entrenamiento y validación disminuya durante las épocas y que el accuracy aumente. Si la pérdida de entrenamiento continúa bajando mientras la de validación sube de forma sostenida, existe evidencia de overfitting. Los valores concretos quedan registrados automáticamente en `metrics.json` para documentar el experimento real.
+La pérdida disminuyó de forma sostenida durante las 100 épocas: de 1,0332 a 0,1215 en entrenamiento y de 1,0134 a 0,1689 en validación. Simultáneamente, el accuracy de validación aumentó desde 50,00% hasta 93,33%. Las curvas de entrenamiento y validación evolucionan en la misma dirección y la pérdida de validación no presenta un incremento sostenido, por lo que no se observan señales relevantes de overfitting. La diferencia final entre el accuracy de entrenamiento y validación es de aproximadamente 2,5 puntos porcentuales, compatible con una generalización adecuada.
 
 ## Reproducibilidad
 
